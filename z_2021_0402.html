@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="char">アイウエオ</div>
+
+<div>
+  <button id="send">送信する</button>
+  <button id="re">復活</button>
+</div>
+
+
+<script>
+let a=1;
+let b=2;
+
+console.log(a+b);
+document.write(a+b);
+
+document.querySelector(".char").innerHTML="あいうえお";
+
+for(let i=1; i<365; i++){
+  document.write(i + " ");
+}
+
+let btn=document.querySelector("#send");
+
+btn.addEventListener('click',function(){
+  btn.disabled=true;
+});
+
+
+let btn2=document.querySelector("#re");
+btn2.addEventListener('click',function(){
+  btn.disabled=false;
+});
+
+document.querySelector(".char").style.fontSize="100px";
+</script>
+
+  
+</body>
+</html>
